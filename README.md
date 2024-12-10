@@ -63,7 +63,7 @@ To use this IoT system, ensure you have:
 ## **System Design**
 
 **Architecture**
-
+![WORKFLOW](https://github.com/AIdotyam/IoT/blob/main/Architecture/IoT.png)
 
 The IoT system is integrated with the AI.yam project architecture, using Firebase and Cloud functions to handle backend logic and trigger the IoT actions. The IoT system interacts with the mobile application, cloud, and Telegram bot.
 
