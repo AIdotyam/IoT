@@ -31,12 +31,14 @@ To use this IoT system, ensure you have:
   - IFTTT Webhook
 
 3. Libraries:
+```bash
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+```
 
 ---
 
