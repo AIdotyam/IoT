@@ -1,8 +1,8 @@
 # **AI.yam IoT System**
 
-## **About**
+## **Description**
 
-The AI.yam IoT system is designed to support our main project of detecting dead chickens. While the Machine Learning, Cloud Computing, and Mobile Development aspects of the project operate independently, the IoT component serves as an auxiliary tool that triggers a buzzer and sends notifications via a Telegram bot using a webhook. Once the Mobile Development application detects a dead chicken, the backend system triggers the Telegram bot by sending an ON_buzzer message through the webhook. The bot then activates the IoT buzzer, displays a "dead chicken" message on the I2C LCD, and sends an alert notification via Telegram.
+  The IoT component serves as an auxiliary tool that triggers a buzzer and sends notifications via a Telegram bot using a webhook. Once the Mobile Development application detects a dead chicken, the backend system triggers the Telegram bot by sending an ON_buzzer message through the webhook. The bot then activates the IoT buzzer, displays a "dead chicken" message on the I2C LCD, and sends an alert notification via Telegram.
 
 ---
 
