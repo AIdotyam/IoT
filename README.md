@@ -65,11 +65,12 @@ To use this IoT system, ensure you have:
 ## **System Design**
 
 **Architecture**
-![WORKFLOW](https://github.com/AIdotyam/IoT/blob/main/Architecture/IoT.png)
+![Architecture](https://github.com/AIdotyam/IoT/blob/main/Architecture/IoT[1].png)
 
 The IoT system is integrated with the AI.yam project architecture, using Firebase and Cloud functions to handle backend logic and trigger the IoT actions. The IoT system interacts with the mobile application, cloud, and Telegram bot.
 
 **Workflow**
+![WORKFLOW](https://github.com/AIdotyam/IoT/blob/main/Architecture/IoT.png)
 1. The backend sends a webhook message (ON_buzzer) to the Telegram bot.
 2. The Telegram bot activates the IoT buzzer and sends a notification to users.
 3. The I2C LCD displays a "dead chicken" message for immediate physical alert.
