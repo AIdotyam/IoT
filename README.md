@@ -32,12 +32,12 @@ To use this IoT system, ensure you have:
 
 3. Libraries:
 ```bash
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 #include <ArduinoJson.h>
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
 ```
 
 ---
