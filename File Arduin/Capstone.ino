@@ -20,7 +20,7 @@ WiFiClientSecure client;
 UniversalTelegramBot bot(botToken, client);
 
 unsigned long lastTimeBotRan;
-const int botRequestDelay = 1000; // Delay dalam milidetik
+const int botRequestDelay = 1000;
 
 // LCD I2C (alamat 0x27, ukuran 16x2)
 LiquidCrystal_I2C lcd(0x27, 16, 2);
@@ -34,7 +34,7 @@ bool buzzerActive = false;
 
 // Variabel untuk LED berkedip
 unsigned long previousMillisLED = 0;
-const int ledBlinkInterval = 500; // Interval berkedip dalam milidetik
+const int ledBlinkInterval = 500; 
 bool ledState = false;
 
 // Fungsi untuk menghubungkan ke Wi-Fi
@@ -68,9 +68,9 @@ void handleNewMessages(int numNewMessages) {
         // Aktifkan buzzer dan LED, ubah pesan LCD
         buzzerActive = true;
         lcd.clear();
-        lcd.setCursor((16 - 9) / 2, 0); // Pusatkan teks "Peringatan"
+        lcd.setCursor((16 - 9) / 2, 0); 
         lcd.print("Peringatan");
-        lcd.setCursor((16 - 10) / 2, 1); // Pusatkan teks "Ayam Mati!"
+        lcd.setCursor((16 - 10) / 2, 1);
         lcd.print("Ayam Mati!");
       }
 
@@ -81,11 +81,11 @@ void handleNewMessages(int numNewMessages) {
         // Nonaktifkan buzzer dan LED, kembalikan pesan LCD ke awal
         buzzerActive = false;
         digitalWrite(ledPin, LOW);
-        digitalWrite(buzzerPin, LOW); // Nonaktifkan buzzer
+        digitalWrite(buzzerPin, LOW);
         lcd.clear();
-        lcd.setCursor((16 - 7) / 2, 0); // Pusatkan teks "WELCOME"
+        lcd.setCursor((16 - 7) / 2, 0); 
         lcd.print("WELCOME");
-        lcd.setCursor((16 - 6) / 2, 1); // Pusatkan teks "AI.yam"
+        lcd.setCursor((16 - 6) / 2, 1); 
         lcd.print("AI.yam");
       }
     }
@@ -101,9 +101,9 @@ void setup() {
   // Inisialisasi LCD
   lcd.init();
   lcd.backlight();
-  lcd.setCursor((16 - 7) / 2, 0); // Pusatkan teks "WELCOME"
+  lcd.setCursor((16 - 7) / 2, 0);
   lcd.print("WELCOME");
-  lcd.setCursor((16 - 6) / 2, 1); // Pusatkan teks "AI.yam"
+  lcd.setCursor((16 - 6) / 2, 1);
   lcd.print("AI.yam");
 
   // Hubungkan ke Wi-Fi
@@ -138,8 +138,8 @@ void loop() {
       digitalWrite(ledPin, ledState);
     }
     // Menyalakan buzzer terus-menerus tanpa nada
-    digitalWrite(buzzerPin, HIGH); // Nyalakan buzzer dengan suara keras
+    digitalWrite(buzzerPin, HIGH);
   } else {
-    digitalWrite(buzzerPin, LOW); // Matikan buzzer jika tidak aktif
+    digitalWrite(buzzerPin, LOW); 
   }
 }
