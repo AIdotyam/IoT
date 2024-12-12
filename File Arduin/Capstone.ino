@@ -102,9 +102,9 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor((16 - 7) / 2, 0);
-  lcd.print("WELCOME");
-  lcd.setCursor((16 - 6) / 2, 1);
   lcd.print("AI.yam");
+  lcd.setCursor((16 - 6) / 2, 1);
+  lcd.print("Prototype");
 
   // Hubungkan ke Wi-Fi
   connectWiFi();
